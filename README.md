@@ -31,7 +31,7 @@ This Python script is used to fetch current prices of cryptocurrencies from the 
 
 Example of table format:
 
-<img width="285" alt="image" src="https://github.com/lautaroreche/ActualizacionCryptomonedas/assets/97992228/efbdad14-589d-483e-b2d0-4bd0478bb328">
+<img width="304" alt="Captura de pantalla 2024-09-21 a la(s) 6 14 58 p  m" src="https://github.com/user-attachments/assets/7e6a46b0-8949-479a-99f5-b16d4e1c4a93">
 
 
 ## Contributions 🎁
