@@ -1,12 +1,13 @@
 # Cryptocurrency Prices Updater 🚀
 
-This Python script is used to fetch current prices and variations of cryptocurrencies from the Binance API and update a Google Sheets spreadsheet.
+This Python script is used to fetch current prices of cryptocurrencies from the Binance API and update a Google Sheets spreadsheet and a local MySQL database.
 
 ## Requirements 📋
 
 - Python 3.x
-- Python libraries: requests, gspread, pandas, oauth2client
+- Python libraries: requests, gspread, pandas, google.oauth2, mysql.connector, datetime
 - Google Cloud Platform service account credentials
+- MySQL database
 
 ## Installation 🔧
 
@@ -14,7 +15,7 @@ This Python script is used to fetch current prices and variations of cryptocurre
 2. Install dependencies by running the following command in your terminal:
 
     ```
-    pip install requests gspread pandas oauth2client
+    pip install requests gspread pandas google.oauth2 mysql.connector datetime
     ```
 
 ## Configuration ⚙️
