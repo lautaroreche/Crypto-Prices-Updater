@@ -25,7 +25,7 @@ try:
 except Exception as e:
     print(e)
 
-worksheet = client.open("Archive").worksheet("Sheet1")
+worksheet = client.open("sheet_name").worksheet("label_name")
 tokens = worksheet.col_values(1)
 filtered_tokens = [token for token in tokens if token not in ['NonToken', 'NonToken2']]
 
@@ -41,7 +41,7 @@ for token in filtered_tokens:
     data_list.append(data)
     data_to_database.append((token, date, price))
 
-worksheet = client.open("Archive").worksheet("Sheet2")
+worksheet = client.open("sheet_name").worksheet("label_name")
 worksheet.clear()
 
 df = pd.DataFrame(data_list)
@@ -60,7 +60,7 @@ if conn.is_connected():
             result = cursor.execute("""SELECT * FROM historical_data""")
             rows = cursor.fetchall()
 
-            worksheet = client.open("Archive").worksheet("Sheet3")
+            worksheet = client.open("sheet_name").worksheet("label_name")
             worksheet.clear()
             
             df = pd.DataFrame(rows)
